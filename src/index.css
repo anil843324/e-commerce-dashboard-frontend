@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --primary-blue:#00d8ff;
+    --primary-purple:#6a00ff;
+}
+
+ @layer base{
+    * {
+        @apply font-[Kanit] ;
+      }
+
+    h1{
+        @apply text-2xl font-bold
+    }
+
+    li{
+        @apply p-4
+    }
+
+    button{
+         @apply bg-gradient-to-r from-[#6a00ff] to-[#00d8ff] py-1 px-4 rounded-3xl
+    }
+
+
+} 
+
+
