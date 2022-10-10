@@ -24,7 +24,7 @@ const UpdateProduct = () => {
   const getProductDetails= async()=>{
 
 
-      let  result=  await fetch(`http://localhost:8000/product/${id}`,{
+      let  result=  await fetch(`https://e-commerce-dash-api.onrender.com/product/${id}`,{
         headers:{
           authorization: `bearer ${JSON.parse( localStorage.getItem('token') )}`
         }
@@ -44,7 +44,7 @@ const UpdateProduct = () => {
 
    const updateProduct= async()=>{
 
-     let result= await fetch(`http://localhost:8000/product/${id}`,{
+     let result= await fetch(`https://e-commerce-dash-api.onrender.com/product/${id}`,{
       method:"PUT",
       body:JSON.stringify({name,price,company,category}),
       headers:{

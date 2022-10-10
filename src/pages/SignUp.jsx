@@ -31,7 +31,7 @@ const SignUp = () => {
 
      
 
-    let result = await fetch("http://localhost:8000/register", {
+    let result = await fetch("https://e-commerce-dash-api.onrender.com/register", {
       method: "POST",
       body: JSON.stringify({ name, email, password }),
       headers: {

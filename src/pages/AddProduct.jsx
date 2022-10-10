@@ -31,7 +31,7 @@ const AddProduct = () => {
       steError(false)
       const userId = JSON.parse(localStorage.getItem('user'))._id
 
-      let result = await fetch("http://localhost:8000/add-product", {
+      let result = await fetch("https://e-commerce-dash-api.onrender.com/add-product", {
         method: "POST",
         body: JSON.stringify({ name, price, company, category  ,userId}),
         headers: {

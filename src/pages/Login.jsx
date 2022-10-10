@@ -23,7 +23,7 @@ const Login = () => {
   const handleLogin =  async () => {
 
        
-      let result= await fetch('http://localhost:8000/login',{
+      let result= await fetch('https://e-commerce-dash-api.onrender.com/login',{
 
        method:"POST",
        body: JSON.stringify({email,password}),
